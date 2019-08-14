@@ -1,9 +1,10 @@
 const $odd = $('a:odd');
 const $secureLinks = $('a[href^="https://"]');
 const $pdfs = $('a[href$=".pdf"]');
+const $checkBoxHTML = "<label><input type='checkbox'> Allow PDF downloads</label>";
 // $pdfs.hide();
 
-$("ul").append("<label><input type='checkbox'> Allow PDF downloads</label>");
+$("ul").append($checkBoxHTML);
 
 //open new tab for secure links
 $secureLinks.attr('target', '_blank');
