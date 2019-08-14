@@ -3,7 +3,7 @@ const $secureLinks = $('a[href^="https://"]');
 const $pdfs = $('a[href$=".pdf"]');
 // $pdfs.hide();
 
-
+$("ul").append("<label><input type='checkbox'> Allow PDF downloads</label>");
 
 //open new tab for secure links
 $secureLinks.attr('target', '_blank');
