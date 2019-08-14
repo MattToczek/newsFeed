@@ -27,3 +27,8 @@ $pdfs.on('click', function(event){
   }
   //else, allow download
 });
+
+$('a').each(function(){
+  const url = $(this).attr('href');
+  $(this).parent().append('(' + url + ')');
+})
